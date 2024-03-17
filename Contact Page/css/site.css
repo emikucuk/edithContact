@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Work+Sans&display=swap");
+
+/* NAVBAR... */
+
+.navbar-brand h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+}
+
+.nav-link {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+}
+.active-nav-link {
+  background: #b764ff;
+  border-radius: 4px;
+}
+
+/* ...NAVBAR*/
+
+/*------------------------------------*/
+
+/*MAIN FORM PART LEFT SIDE... */
+
+.left-contact > h1 {
+  font-size: 64px;
+  font-family: Word Sans;
+  font-weight: 600;
+}
+.left-contact > h3 {
+  color: #000;
+  font-family: Noe Display;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.left-contact > p {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.social-item > a {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.social-item a {
+  padding: 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+.social-item a img {
+  width: 24px;
+  height: 24px;
+}
+
+.social-item a:hover {
+  background-color: #632599;
+}
+.social-item a:hover img {
+  filter: brightness(0) invert(1);
+  animation: rotateSocial 500ms linear;
+}
+@keyframes rotateSocial {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* ...MAIN FORM PART LEFT SIDE */
+
+/*------------------------------------*/
+
+/* MAIN FORM PART RIGHT SIDE... */
+
+.right-contact form .form-element label {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.right-contact form .form-element input {
+  background-color: #f7f7f7;
+}
+.right-contact
+  form
+  .form-element
+  input[type="number"]::-webkit-outer-spin-button,
+.right-contact
+  form
+  .form-element
+  input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+
+  /*-moz-appearance: textfield; Mozilla için kullanımı doğrudur.*/
+}
+.right-contact form .form-element select {
+  background-color: #f7f7f7;
+  color: #b2b2b2;
+}
+.right-contact form .form-element select > option {
+  color: #333333;
+}
+.right-contact form .form-element #form-textarea {
+  background-color: #f7f7f7;
+  resize: none;
+  overflow-y: hidden;
+  outline: none;
+}
+.right-contact form .send {
+  border-radius: 4px;
+  background: #b764ff;
+}
+
+/* ...MAIN FORM PART RIGHT SIDE */
+
+/*------------------------------------*/
+
+/* FOOTER PART... */
+
+footer {
+  background-color: #2b384c;
+}
+footer a h1 {
+  color: #132238;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  padding-top: 20px;
+}
+footer ul .footer-item {
+  padding-top: 10px;
+}
+footer ul .footer-item a {
+  color: #f0f1f3;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+/* ...FOOTER PART */

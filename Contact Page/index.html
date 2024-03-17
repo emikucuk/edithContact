@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <!--BOOTSTRAP MIN.CSS    -->
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+    /> -->
+
+    <!-- CSS.FILE    -->
+    <link rel="stylesheet" href="./css/site.css" />
+
+    <!-- BOOTSTRAP BUNDLE.MIN.JS    -->
+    <script
+      defer
+      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- JAVASCRIPT FILE -->
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <!-- NAVBAR... -->
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid d-flex justify-content-md-around">
+        <a class="navbar-brand d-flex gap-3" href="#">
+          <img src="img/BrandLogo.svg" alt="" />
+          <h1 class="h3 pt-2">Edith</h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse flex-grow-0 me-2"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav d-flex gap-4">
+            <a class="nav-link" href="#">Anasayfa</a>
+            <a class="nav-link" href="#">Hakkında</a>
+            <a class="nav-link" href="#">Hizmetler</a>
+            <a class="nav-link" href="#">İş Süreci</a>
+            <a class="nav-link" href="#">Yaptığımız İşler</a>
+            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="#">İletişim</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ...NAVBAR -->
+
+    <!-- MAIN CONTACT PART / FORM... -->
+    <main class="container pb-5 pt-4">
+      <div class="row gap-4 justify-content-center">
+        <div class="col-12 col-md-5 align-self-center">
+          <div class="left-contact d-flex flex-column">
+            <h1>Let's Talk</h1>
+            <p>
+              Geliştirilecek büyük bir fikriniz veya markanız mı var ve yardıma
+              mı ihtiyacınız var? O zaman bize ulaşın, projeniz hakkında bilgi
+              almak ve yardım sağlamak isteriz.
+            </p>
+            <h3>Email</h3>
+            <p>e-mails@email.com</p>
+            <h3>Socials</h3>
+            <ul class="list-unstyled d-flex gap-4 my-3 align-items-center">
+              <li class="social-item">
+                <a href="#"
+                  ><img src="img/Instagram.svg" alt="" class="instagram"
+                /></a>
+              </li>
+              <li class="social-item">
+                <a href="#"
+                  ><img src="img/Twitter.svg" alt="" class="twitter"
+                /></a>
+              </li>
+              <li class="social-item">
+                <a href="#"
+                  ><img src="img/facebook.svg" alt="" class="facebook"
+                /></a>
+              </li>
+              <li class="social-item">
+                <a href="#"><img src="img/In.svg" alt="" class="linkedIN" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-5">
+          <div class="right-contact">
+            <form action="">
+              <div class="mb-3 form-element">
+                <label class="pb-1 form-label">İsim Soyisim</label>
+                <input
+                  type="text"
+                  class="form-control focus-ring focus-ring-secondary border-0"
+                />
+              </div>
+              <div class="mb-3 form-element">
+                <label class="pb-1 form-label">E-Mail</label>
+                <input
+                  type="email"
+                  class="form-control focus-ring focus-ring-secondary border-0"
+                />
+              </div>
+              <div class="mb-3 form-element">
+                <label class="pb-1 form-label"
+                  >Hangi hizmet için talepte bulunuyorsunuz?</label
+                >
+                <select
+                  class="form-select focus-ring focus-ring-secondary border-0"
+                  id="projectType"
+                >
+                  <option disabled selected>Proje Tipini Seçiniz</option>
+                  <option>Selection-1</option>
+                  <option>Selection-2</option>
+                  <option>Selection-3</option>
+                </select>
+              </div>
+              <div class="mb-3 form-element">
+                <label class="pb-1 form-label">Bütçe</label>
+                <input
+                  type="number"
+                  class="form-control focus-ring focus-ring-secondary border-0"
+                  placeholder="Bütçe tipini giriniz"
+                  onkeydown="return event.keyCode !== 69"
+                />
+                <!-- 
+                  SELECTION KULLANMAK İSTERSENİZ YORUM SATIRINDAN ÇIKARMANIZ YETERLİDİR...
+                  <select
+                  class="form-select focus-ring focus-ring-secondary border-0"
+                  id="budgetType"
+                >
+                  <option disabled selected>Bütçe Tipini Seçiniz</option>
+                  <option>Budget-1</option>
+                  <option>Budget-2</option>
+                  <option>Budget-3</option>
+                </select> -->
+              </div>
+              <div class="mb-3 form-element">
+                <label class="pb-1 form-label">Mesajınız</label>
+                <textarea
+                  name="textarea"
+                  class="w-100 h-100 p-2 focus-ring focus-ring-secondary border-0 rounded"
+                  id="form-textarea"
+                  rows="10"
+                  placeholder="Mesajınızı buraya yazınız..."
+                ></textarea>
+              </div>
+
+              <a class="send btn text-white pb-2 pt-2 w-100 mb-2">Gönder</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ...MAIN CONTACT PART / FORM -->
+
+    <!-- FOOTER... -->
+    <footer
+      class="container-fluid pt-3 pb-2 d-flex flex-column flex-lg-row justify-content-md-around align-items-center"
+    >
+      <a class="navbar-brand d-flex gap-3" href="#">
+        <img src="img/BrandLogoFooter.svg" alt="" class="pb-1" />
+        <h1 class="h3 pt-2 text-white">Edith</h1>
+      </a>
+      <ul class="list-unstyled row">
+        <li class="footer-item col-4 col-md-2"><a href="#">Anasayfa</a></li>
+        <li class="footer-item col-4 col-md-2"><a href="#">Hakkında</a></li>
+        <li class="footer-item col-4 col-md-2"><a href="#">Hizmetler</a></li>
+        <li class="footer-item col-3 col-md-2"><a href="#">İş Süreci</a></li>
+        <li class="footer-item col-3 col-md-2"><a href="#">Portföy</a></li>
+        <li class="footer-item col-3 col-md-1"><a href="#">Blog</a></li>
+        <li class="footer-item col-3 col-md-1"><a href="#">İletişim</a></li>
+      </ul>
+      <h5 class="text-white fs-6">Copyright © 2023 Edith</h5>
+    </footer>
+    <!-- ...FOOTER  -->
+  </body>
+</html>
